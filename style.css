@@ -1,4 +1,5 @@
-.parent-container{
+.parent-container,
+.parent-container-login{
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -7,12 +8,14 @@
     padding: 0;
 }
 
-.parent-container .left-side .title{
+.parent-container .left-side .title,
+.parent-container-login .title{
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
-.parent-container .left-side{
+.parent-container .left-side,
+.parent-container-login .right-side{
     display: flex;
     width: 40vw;
     flex-direction: column;
@@ -21,17 +24,20 @@
     justify-content: center;
 }
 
-.parent-container .left-side .row{
+.parent-container .left-side .row,
+.parent-container-login .right-side .row{
     width: 25rem;
 }
 
-.parent-container .left-side .row input{
+.parent-container .left-side .row input,
+.parent-container-login .right-side .row input{
     border: 1px solid #6657cb;
     height: 2.5em;
     border-radius: 8px;
 }
 
-.parent-container .right-side{
+.parent-container .right-side,
+.parent-container-login .left-side{
     background-color: #dbd4f3;
     width: 60vw;
     display: flex;
@@ -44,7 +50,13 @@
     width: auto;
 }
 
-.parent-container .left-side .cta-btn{
+
+.parent-container-login .left-side img{
+    height: 40rem;
+    width: auto;
+}
+
+.cta-btn{
     background-color: #dbd4f3;
     width: 100%;
     border: 1px solid #6657cb;
@@ -53,7 +65,7 @@
     margin-top: 1rem;
 }
 
-.parent-container .left-side .cta-btn:hover{
+.cta-btn:hover{
     color: #6657cb;
     background-color: #fff;
 }
