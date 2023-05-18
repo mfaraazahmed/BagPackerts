@@ -1,8 +1,8 @@
 <template>
-  <NavbarComponent/>
+<NavbarComponent/>
   <div class="auth-wrapper">
     <div class="inner-auth">
-      <router-view></router-view>
+    <router-view></router-view>
     </div>
   </div>
   
