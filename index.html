@@ -10,32 +10,32 @@
 </head>
 <body>
     <div class="parent-container">
-        <form class="left-side">
+        <form action="signup.php" method="POST" class="left-side">
             <div class="title">
                 Create an account
             </div>
             <div class="row">
                 <label for="firstName">First Name</label>
-                <input type="text" class="col-12" placeholder="Type here">
+                <input type="text" name="firstName" class="col-12" placeholder="Type here">
             </div>
             <div class="row">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="col-12" placeholder="Type here">
+                <input type="text" name="lastName" class="col-12" placeholder="Type here">
             </div>
             <div class="row">
                 <label for="Email">Email address</label>
-                <input type="email" class="col-12" placeholder="example@gmail.com">
+                <input type="email" name="email" class="col-12" placeholder="example@gmail.com">
             </div>
             <div class="row">
                 <label for="password">Password</label>
-                <input type="password" class="col-12" placeholder="Type here">
+                <input type="password" name="password" class="col-12" placeholder="Type here">
             </div>
             <div class="row">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" class="col-12" placeholder="Type here">
+                <input type="password" name="confirmPassword" class="col-12" placeholder="Type here">
             </div>
             <div class="row">
-                <button class="cta-btn">Register</button>
+                <button class="cta-btn" name="register">Register</button>
             </div>
         </form>
         <div class="right-side">
