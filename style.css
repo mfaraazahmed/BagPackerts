@@ -69,3 +69,65 @@
     color: #6657cb;
     background-color: #fff;
 }
+
+nav .logo{
+    width: 3.5rem;
+    height: auto;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: #6657c6 !important;
+}
+
+nav .nav-item .nav-link{
+    color: #ffff !important;
+    margin: 0 1rem;
+}
+
+nav ul button{
+    margin: 0 2rem;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+
+nav ul button:hover{
+    background-color: #fff !important;
+    color: #6657c6 !important;
+}
+
+nav .dropdown-menu a{
+    color: #6657c6 !important;
+}
+
+nav .dropdown-menu a:hover{
+    background-color: none !important;
+}
+
+.middle-container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.middle-container .title{
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 5px solid #6657c6;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+.middle-container .card {
+    width: 65rem;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.middle-container .card img{
+    object-fit: cover;
+    height: 17rem;
+}
