@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+.file-drop{
+    display: block;
+}
+
 .parent-container .left-side .title,
 .parent-container-login .title{
     font-size: 2.4rem;
