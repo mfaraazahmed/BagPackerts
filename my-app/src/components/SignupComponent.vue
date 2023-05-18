@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="auth-component">
+    <div class="container d-flex flex-md-row flex-column" id="auth-component">
         <form @submit="handleSubmit" class="d-flex flex-column">
             <div class="main-title">
                 BagPackers
@@ -32,7 +32,11 @@
             </div>
 
             <button class="cta-btn">Register</button>
-            </form>
+        </form>
+
+            <div class="img-div">
+                <img src="../assets/backtrans.png" alt="image" class="home_image">
+            </div>
     </div>
     </template>
     
@@ -76,21 +80,24 @@
     
     <style>
     #auth-component{
-        margin: 0 auto;
         flex-direction: start;
-        width: 35rem;
+        width: fit-content;
         height: fit-content;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         margin-top: 4rem;
         margin-block: 2rem;
+        background-color: #DBD4F3;
+        padding: 0;
     }
     
     #auth-component form{
-        padding: 3rem 1rem;
         display: flex;
-        margin: 0 auto;
+        background-color: #eee;
     }
-    
+    .home_image{
+        height: 40rem;
+        width: 37.5rem;
+    }
+
     form .main-title{
         font-size: 2rem;
         text-transform: capitalize;
@@ -129,7 +136,7 @@
         border: 1px solid #333;
         border-radius: 8px;
         height: 2.5rem;
-        margin: 0 auto;
+        margin: 1.5rem auto;
         padding: 0.125rem 2rem;
     }
     
