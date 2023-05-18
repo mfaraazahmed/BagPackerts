@@ -8,15 +8,11 @@
     padding: 0;
 }
 
-.file-drop{
-    display: block;
-}
-
 .parent-container .left-side .title,
 .parent-container-login .title{
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .parent-container .left-side,
 .parent-container-login .right-side{
@@ -106,6 +102,27 @@ nav .dropdown-menu a{
 
 nav .dropdown-menu a:hover{
     background-color: none !important;
+}
+
+nav .navbar-brand{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+nav .navbar-brand-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+nav .navbar-brand-group .name{
+    color: #fff !important;
+}
+
+nav .navbar-brand-group .name>input{
+    background-color: transparent !important;
+        border: none !important;
+        color: #fff !important;
 }
 
 .middle-container{
@@ -311,4 +328,36 @@ a {
     max-width: 100%;
   }
   /* End Landing Page */
+
+  .parent-container{
+    width: 100vw !important;
+    display: flex;
+  }
+
+  .parent-container .map{
+    width: 75vw !important;
+    height: 100vh !important;
+  }
   
+  .parent-container .payment-container{
+    background-color: #6657c6;
+    margin: 0 !important;
+    width: 25vw !important;
+    color: #fff !important;
+    padding: 0 2rem;
+  }
+
+  .payment-container .title{
+    margin-top: 5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .payment-container .row{
+    margin-top: 1rem;
+  }
+
+  .parent-container .row .sub-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }

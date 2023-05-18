@@ -9,7 +9,7 @@ error_reporting(0);
     
     if($conn)
     {
-        echo "Connection success";
+        // echo "Connection success";
     }
     else
     {
