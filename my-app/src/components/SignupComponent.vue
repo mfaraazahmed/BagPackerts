@@ -1,6 +1,6 @@
 <template>
     <div class="container" id="auth-component">
-        <form @submit="handleSubmit" class="d-flex flex-column">
+        <form @submit="handleSubmit.preventDefault" class="d-flex flex-column">
             <div class="main-title">
                 BagPackers
             </div>
@@ -41,8 +41,7 @@
     export default {
         name: 'SignupComponent',
         methods: {
-            handleSubmit(e){
-                e.preventDefault();
+            handleSubmit(){
                 console.log("submitted")
                 const data = {
                     firstName: this.firstName,
@@ -52,9 +51,9 @@
                     confirmPassword: this.confirmPassword
                 }
                 
-                axios.post('http://localhost:8000/register', data)
+                axios.post('http://localhost:8000/api/register', data)
                 .then((res) => {
-                    console.log(res.data)
+                    console.log(res)
                 }).catch(
                     err => {
                         console.log(err)
